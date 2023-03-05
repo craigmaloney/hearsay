@@ -1,0 +1,25 @@
+---
+name: "conditional_template"
+title: "Conditional Template"
+reactions:
+  - reaction: "Reaction 1"
+    encounter: 'where_to_go'
+    result: "Reaction text"
+    change:
+      - name: 'you'
+        passive_driven: 0.03
+  - reaction: "Reaction 2"
+    condition:
+      - character: 'you'
+        parameter: 'passive_driven'
+        equals: 0.0
+      - character: 'felix'
+        parameter: 'rebel_loyal'
+        equals: 0.0
+    encounter: 'where_to_go'
+    result: "Reaction text"
+    change:
+      - name: 'you'
+        passive_driven: 0.03
+description: |
+  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.

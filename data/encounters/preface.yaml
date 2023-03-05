@@ -1,0 +1,11 @@
+---
+name: "preface"
+title: "Preface"
+reactions:
+  - reaction: "\"Let's go!\" you say to the programmer."
+    encounter: 'introduction'
+    result: "\"Right this way!\" the programmer says as he ushers you into the example storyworld."
+description: |
+  This is a demonstration of some of the capabilities of the Hearsay engine. It is woefully incomplete, but hopefully will give you an example of how to use the system.
+
+  The programmer remarks "Comments and patches welcome." You sense that is a pretty stock phrase for such an engine, but take the programmer at face value.

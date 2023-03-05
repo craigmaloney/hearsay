@@ -1,0 +1,6 @@
+---
+name: "alice"
+formal_name: "Alice"
+role: "Alice, a character"
+p_values:
+  annoyed_happy: 0.0

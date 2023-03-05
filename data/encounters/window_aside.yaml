@@ -1,0 +1,32 @@
+---
+name: "window_aside"
+title: "A small aside about the last encounter"
+reactions:
+  - reaction: "You assertively agree with the programmer."
+    condition:
+      - character: 'you'
+        parameter: 'passive_driven'
+        greater_than: 0.0
+    encounter: 'back_to_the_window'
+    result: "The programmer smiles. \"Now, back to the window\"."
+  - reaction: "You passively agree with the programmer."
+    condition:
+      - character: 'you'
+        parameter: 'passive_driven'
+        less_than: 0.0
+    encounter: 'back_to_the_window'
+    result: "The programmer smiles. \"Now, back to the window\"."
+description: |
+  The programmer looks up. "What you saw there was a basic encounter with three different selections. Each of those selections changed what's called 'p_value'. Each character can have several different p_values associated with them. They're not necessarily called p_values in the code or in the encounters, though; they're referenced in the 'change' part of the YAML file."
+
+  "If you selected Alice you'll notice that her annoyed_happy p_value was augmented by -0.06. If you selected Bob his annoyed_happy p_value is augmented by -0.06. In both cases your passive_driven p_value was augmented by -0.03."
+
+  The programmer continues. "You can think of p_values as a number-line between negative one and positive one (-1 to +1). The more negative the number is the more it leans to the left parameter (in this case it's annoyed). The more positive the number is the more it leans to the right parameter (in this case it's happy). So you can have a powerful tool for determining how annoyed or how happy a character is. In this case either Alice or Bob are trending towards being annoyed at you if you selected them."
+
+  You cock your head to the side a bit.
+
+  The programmer does a small flourish. "You'll also see that your passive_driven was augmented by plus-or-minus 0.03. If you decided to look out the window it was augmented by 0.03. If you decided to let someone else do it it was augmented by -0.03."
+
+  "These can then be used for comparisons. You can tell to what degree a character is by their p_value. So in th case of passive_driven we can tell that you're trending towards being either passive or driven. That can be used to show different responses to you."
+
+  "Here, let me show you. If you are more driven you'll see an 'assertive' response. If you are more passive you'll see a 'passive' response."

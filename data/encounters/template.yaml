@@ -1,0 +1,13 @@
+---
+name: "template"
+title: "Template"
+reactions:
+  - reaction: "Reaction "
+    encounter: 'where_to_go'
+    result: "Reaction text"
+    change:
+      - name: 'you'
+        passive_driven: 0.03
+description: |
+  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+

@@ -1,0 +1,44 @@
+---
+name: "introduction"
+title: "Introduction"
+reactions:
+  - reaction: "\"Obviously I go and look out the window."
+    encounter: 'window_aside'
+    result: "\"Obviously.\" the programmer smirks."
+    change:
+      - name: 'you'
+        passive_driven: 0.03
+  - reaction: "\"I ask Alice to look out the window and report back what she sees.\""
+    encounter: 'window_aside'
+    result: "Alice looks a little annoyed at you, but relents and looks outside of the window."
+    change:
+      - name: 'you'
+        passive_driven: -0.03
+      - name: 'alice'
+        annoyed_happy: -0.06
+  - reaction: "\"I ask Bob to look out the window and report back what he sees.\""
+    encounter: 'window_aside'
+    result: "Bob wonders how he got involved with this, but relents and looks outside of the window."
+    change:
+      - name: 'you'
+        passive_driven: -0.03
+      - name: 'bob'
+        annoyed_happy: -0.06
+description: |
+  "It was a dark and stormy night", the programmer begins.
+
+  You groan. "Seriously? You're starting with that old trope?", you say.
+
+  "Hey, it worked for Snoopy. Look it up." The programmer clears his throat. "Anyway, this is a demonstration. It's not supposed to be a great story, only enough to get you started."
+
+  You relax back into your seat and mumble something about sunk cost fallacies. "OK, I've made it this far. Show me what you've got."
+
+  The programmer continues. "You, Alice, and Bob are stuck in a cabin..."
+
+  "Bottle Episode" you interject.
+
+  "Shut up. You're all stuck in a cabin. Your supplies are running low, and the fire is starting to burn out."
+
+  "Suddenly Alice looks up. She thinks she saw something in the window."
+
+  "What do you do?" the programmer says to you.
