@@ -1,0 +1,33 @@
+---
+name: "alice_window"
+title: "Alice looks out the window"
+reactions:
+  - reaction: "\"That's it?! That's the story? A million monkeys could have written better.\""
+    result: "The programmer smiles. \"That's where you come in. I hope you make something amazing. Also check the save_file.json for more details. Goodbye!\""
+    change:
+      - name: 'you'
+        passive_driven: 0.01
+  - reaction: "\"That's amazing. I want to learn more about this.\""
+    result: "The programmer smiles. \"That's where you come in. I hope you make something amazing. Also check the save_file.json for more details. Goodbye!\""
+    change:
+      - name: 'you'
+        passive_driven: 0.03
+  - reaction: "\"This is too confusing. I can't keep up with any of this stuff. Blah blah blah!\""
+    result: "The programmer smiles. \"Feel free to ping me at craig@decafbad.net. I don't have all of the answers but I'm happy to listen. Hope you make something amazing. Also check the save_file.json for more details. Goodbye!\""
+    change:
+      - name: 'you'
+        passive_driven: -0.03
+description: |
+  Alice moves toward the window. As she gets near a giant claw smashes through the window. Bob's eyes grow wide. You've never seen anything like this. Well, unless you count the movies.
+
+  Suddenly a hole opens up underneath Bob. He disappears into the void.
+
+  You look around. You're all alone.
+
+  Suddenly you hear a voice off-screen. "Cut! That's a wrap", the programmer says. The lights come up, and the crew begin dismantling the set.
+ 
+  "Well done everyone", the programmer says. "There wasn't much to work with here, but I hope it gets some of the major ideas across. I think we... Bob! Get out of the catering truck! We have to pay for whatever they can't reuse. Go on, git!"
+
+  The programmer looks to you. "That's the basic premise. Obviously this isn't a great story but I hope it shows you some of the power of this technology. You can learn more about Interactive Storytelling from Chris Crawford's site at https://erasmatazz.com."
+
+  You look to the programmer.

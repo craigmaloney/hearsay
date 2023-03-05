@@ -1,0 +1,29 @@
+---
+name: "back_to_the_window"
+title: "Back to the Window"
+reactions:
+  - reaction: "\"Ah, it was you that went to the window. That wasn't so hard, was it?\""
+    encounter: 'you_window'
+    result: "You give the programmer a quizzical look. \"Go on. It's mostly safe.\" he reassures."
+    condition:
+      - character: 'you'
+        parameter: 'passive_driven'
+        greater_than: 0.0
+  - reaction: "\"Ah, right, it was Alice who went to the window. Moving on.\""
+    condition:
+      - character: 'alice'
+        parameter: 'annoyed_happy'
+        less_than: 0.0
+    encounter: 'alice_window'
+    result: "You give the programmer a quizzical look. \"I'm sure Alice will love it. The suspense is killing me.\" he reassures"
+  - reaction: "\"Ah, right, Bob was selected to go to the window. Delightful.\""
+    condition:
+      - character: 'bob'
+        parameter: 'annoyed_happy'
+        less_than: 0.0
+    encounter: 'alice_window'
+    result: "You give the programmer a quizzical look. \"I'm sure Bob will love it. The suspense is killing me.\" he reassures"
+description: |
+  The programmer gives a slightly stern look. "Now, we didn't keep track of whether you selected Yourself, Alice, or Bob to look out the window. But that's OK. We can look at the p_values to make that determination. Most times you won't need to do this but this gives me a way to demonstrate multiple conditions based on multiple characters."
+
+  The programmer beckons downward. "Here's your choice, sport."
